@@ -1,0 +1,3 @@
+all:
+	gcc filecnt.c -o filecnt
+	gcc filedisp.c -o filedisp

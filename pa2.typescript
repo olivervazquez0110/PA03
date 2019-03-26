@@ -1,0 +1,16 @@
+Script started on 2019-03-04 22:33:38-0600
+]0;true-mex@oliver-laptop: ~/Desktop/Unix/Projects/2[01;32mtrue-mex@oliver-laptop[00m:[01;34m~/Desktop/Unix/Projects/2[00m$ exit:exit./filecnt /usr/share | ./filedisp -d[9P.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9@/usr/share[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pgcc filedisp.c -o filedisp[2Pcnt.c -o filecnt
+]0;true-mex@oliver-laptop: ~/Desktop/Unix/Projects/2[01;32mtrue-mex@oliver-laptop[00m:[01;34m~/Desktop/Unix/Projects/2[00m$ gcc filecnt.c -o filecntexit[K:exit./filecnt /usr/share | ./filedisp -d[9P.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9@/usr/share[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pgcc filedisp.c -o filedisp
+]0;true-mex@oliver-laptop: ~/Desktop/Unix/Projects/2[01;32mtrue-mex@oliver-laptop[00m:[01;34m~/Desktop/Unix/Projects/2[00m$ gcc filedisp.c -o filedisp[2Pcnt.c -o filecntexit[K:exit./filecnt /usr/share | ./filedisp -d
+The total number of directories in directory /usr/share is: 10602
+
+]0;true-mex@oliver-laptop: ~/Desktop/Unix/Projects/2[01;32mtrue-mex@oliver-laptop[00m:[01;34m~/Desktop/Unix/Projects/2[00m$ ./filecnt /usr/share | ./filedisp -d[10Pgcc filedisp.c -o filedisp./filecnt /usr/share | ./filedisp -d[Kf
+The total number of files in directory /usr/share is: 78872
+
+]0;true-mex@oliver-laptop: ~/Desktop/Unix/Projects/2[01;32mtrue-mex@oliver-laptop[00m:[01;34m~/Desktop/Unix/Projects/2[00m$ ./filecnt /usr/share | ./filedisp -fd[Kb
+The total number of bytes occupied by all files in directory /usr/share is: 1576941902
+
+]0;true-mex@oliver-laptop: ~/Desktop/Unix/Projects/2[01;32mtrue-mex@oliver-laptop[00m:[01;34m~/Desktop/Unix/Projects/2[00m$ exit
+exit
+
+Script done on 2019-03-04 22:34:02-0600

@@ -1,0 +1,69 @@
+
+
+Design, implement and test two C/C++ programs, filecnt and filedisp, that will be used together via  a 'pipe':
+
+1. A files counter (named filecnt) program
+
+filecnt accepts one argument which is the path of a directory in a Unix file system.
+
+The minimum requirement is that filecnt can accept and process an absolute path, but if your program can accept and process other forms of paths 
+(e.g. relative path, '~' expansion, etc...) extra credit points will be given. If you implement these extra features they must be clearly documented 
+to receive extra credit points.
+
+The program then recursively explores (traverses) the given directory and counts 1) the total number of directories, 2) the total number of plain files 
+(i.e. not directory), and 3) the total number of bytes occupied by those plain files.  If an entry in a directory is not accessible (no permission to access), 
+or an entry is a link to another location of the file system, the program should skip (i.e. do not count) that entry.
+
+After processing the given directory, the program should output the following text to the standard output:
+
+The total number of directories in directory <given directory>   is: xxx.
+
+The total number of files in directory <given directory> is:  yyy.
+
+The total number of bytes occupied by all files in directory <given directory> is:  zzz.
+
+Obviously xxx, yyy, and zzz must be replaced by actual data after processing.
+
+2. A file display (named filedisp) program
+
+filedisp receives text (multiple lines) from standard input, accepts one of the three options: -d, -f and -b, and displays one line from the input accordingly
+ to the given option.
+
+If the option was -d it displays the input line that has the word 'directories'.
+
+If the option was -f it displays the input line that has the word 'files'.
+
+If the option was -b it displays the input line that has the word 'bytes'.
+
+Note that since filedisp is simply used to illustrate the use of 'pipes'  and designed to be used together with filecnt no input validation nor edgy cases 
+consideration is required. If an invalid option was given or the input does not have the searched word, warning messages should be displayed by the program 
+to notify the user. 
+
+Submit a zip file named PA02_<YourFirstName>-<YourLastName>.zip (e.g. PA02_Jame_Do.zip) to eLearning before the due date.
+
+The zip file must contain:
+
+1. The source code files
+
+2. A Word file that serves as a documentation for your programs. Bad documentation will yield lower grade so spend the effort to prepare the documentation 
+such that it is clear to the reader what the program does and how to use it.
+
+3. The executable files for filecnt and filedisp that were generated on your Linux virtual machine (you can generate the executable on cs1 or cs2 but in that 
+case, you must clearly indicate that, e.g. by naming your executable files "xxxxxxxx.cs1" and state that in your documentation).
+
+4. The output file of the 'script' command that was started before you compile your programs and ended after you test your programs using the following commands:
+ 
+filecnt /usr/share | filedisp -d
+
+filecnt /usr/share | filedisp -f
+
+filecnt /usr/share | filedisp -b 
+
+5. Extras
+
+For example, if you use the make utility to develop your program, include the Makefile here.
+
+Post your questions and thoughts in the class forums.
+
+As with other assignments, you can resubmit your work two times after your initial submission, and the latest submission will be graded.
+
